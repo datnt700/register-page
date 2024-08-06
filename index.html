@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <img class="blur-1" src="./assets/blur-radial.svg" alt="" />
+      <img class="blur-2" src="./assets/blur-radial.svg" alt="" />
+      <section class="form first active">
+        <h3 class="title main">Register</h3>
+        <form class="register">
+          <div class="register-input">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" placeholder="enter your name" />
+          </div>
+          <div class="register-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="enter your email" />
+          </div>
+          <button type="submit" class="btn registration">Continue</button>
+        </form>
+      </section>
+      <section class="form second">
+        <h3 class="title sous">Which topics you are interested in?</h3>
+        <form class="topic-list">
+          <label class="topic-label">
+            <input
+              type="checkbox"
+              id="sd"
+              class="items"
+              placeholder="enter your name"
+              value="Software Development"
+              required
+            />
+            Software Development
+          </label>
+          <label class="topic-label">
+            <input
+              type="checkbox"
+              class="items"
+              id="ue"
+              value="User Experience"
+              required
+            />
+            User Experience
+          </label>
+          <label class="topic-label">
+            <input
+              type="checkbox"
+              class="items"
+              id="gd"
+              value="Graphic Design"
+              required
+            />
+            Graphic Design
+          </label>
+          <button class="btn topic">Continue</button>
+        </form>
+      </section>
+      <section class="form third">
+        <div class="summary">
+          <h3 class="title sous">Summary</h3>
+          <div class="info-sum">
+            <p class="nameSum"></p>
+            <p class="emailSum"></p>
+            <p class="topic-sum">Topics:</p>
+            <ul class="item-list"></ul>
+          </div>
+
+          <button class="btn confirm">Confirm</button>
+        </div>
+      </section>
+      <section class="form four">
+        <div class="message">
+          <p>✅ Success</p>
+        </div>
+      </section>
+      <div class="steps">
+        <p class="count"></p>
+        <span class="circle one active"></span>
+        <span class="circle two"></span>
+        <span class="circle three"></span>
+      </div>
+    </div>
+  </body>
+
+  <script src="./app.js"></script>
+</html>
